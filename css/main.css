@@ -27,8 +27,6 @@ body {
     
     /*background:url('../img/greenbg_tile.gif');*/
 }
-#containermain {
-}
 
 img.bg {
   /* Set rules to fill background */
@@ -127,20 +125,25 @@ textarea {
 
 
 .slidedownpage {
-    width: 49%;
-    left: 22%;
-    background-color: rgba(000,000,000,0.6);
-    position: absolute;
+    width: 1000px;
+    height:700px;
+    margin:auto;
+    background-color: rgba(000,000,000,0.9);
+    position: relative;
     top: -700px;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 2px;
     display:none;
     color: #fff;
     font-size: 12px;
     font-family: Merienda;
     box-shadow: 0px 0px 7px #FFE;
 }
-
+.slidedownpage h1 {
+    margin-top:300px;
+    width:200px;
+    margin-left:350px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

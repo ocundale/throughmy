@@ -2,7 +2,7 @@
 $(function() {
 
 	function switchPage() {
-	    $('#churchpage').fadeIn(2000).css({'top': '10%'}, 1000);
+	    $('#container').fadeIn(2000).css({'top': '50px'}, 1000);
 	}
 	//Listeners
 	switchPage();
