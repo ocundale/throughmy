@@ -383,7 +383,7 @@
         $(this).wrap("<div class='flip_gallery'>");
         var images = $(this).find("img");
         //cannot hide because explorer does not give the image dimensions if hidden
-        var canvas = $(document.createElement("canvas")).attr({width:width,height:height}).css({margin:0,marginTop:-70,width:width+"px",height:height+"px"})
+        var canvas = $(document.createElement("canvas")).attr({width:width,height:height}).css({margin:0,marginTop:-92,width:width+"px",height:height+"px"})
         $(this).css({position:"absolute",left:"-9000px",top:"-9000px"}).after(canvas);
         new Flip($(this).next(),width || 300,height || 300,images,opts);
       });

@@ -18,14 +18,16 @@
   <meta name="viewport" content="width=device-width">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Merienda' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Overlock+SC' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jflip.js"></script>
+  <script src="js/nav.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.1.min.js"><\/script>')</script>
 
   <script src="js/plugins.js"></script>
@@ -36,9 +38,40 @@
 <img class="bg" src="img/bg_main.jpg" />
 <div id="containermain">
   <div class="nav">
+   <ul id="sdt_menu" class="sdt_menu">
+          <li>
+            <a href="#">
+              <img src="images/2.jpg" alt=""/>
+              <span class="sdt_active"></span>
+              <span class="sdt_wrap">
+                <span class="sdt_link">Home</span>
+                <span class="sdt_descr">Take me back!</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/1.jpg" alt=""/>
+              <span class="sdt_active"></span>
+              <span class="sdt_wrap">
+                <span class="sdt_link">Prints</span>
+                <span class="sdt_descr">Prints for sale</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/3.jpg" alt=""/>
+              <span class="sdt_active"></span>
+              <span class="sdt_wrap">
+                <span class="sdt_link">Contact</span>
+                <span class="sdt_descr">Get in touch</span>
+              </span>
+            </a>
+          </li><!-- 
     <h3><a href="#">Home</a></h3>
     <h3><a href="#">Prints</a></h3>
-    <h3 class="right"><a href="#">Contact</a></h3>
+    <h3 class="right"><a href="#">Contact</a></h3> -->
   </div>
 
     <!--[if lt IE 7]>
@@ -46,6 +79,13 @@
     <![endif]-->
 
   <div id="container" class="slidedownpage">
+
+ 
+
+
+
+
+
     <ul id="galleryls">
       <li>
         <img class="" src="img/lake.jpg">

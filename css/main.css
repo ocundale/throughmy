@@ -127,7 +127,7 @@ textarea {
 
 #container {
     width: 800px;
-height: 580px;
+    height: 570px;
     margin:auto;
     background-color: rgba(000,000,000,0.9);
     position: relative;
@@ -137,7 +137,7 @@ height: 580px;
     display:none;
     color: #fff;
     font-size: 12px;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Overlock SC', cursive;
     box-shadow: 0px 0px 7px #FFE;
 }
 .galleryls {
@@ -152,12 +152,12 @@ position: absolute;
 .nav {
     background-color: rgba(000,000,000,0.3);
     color: white;
-    height: 40px;
+    height: 43px;
     display: block;
-    width: 800px;
-    border: 1px solid #fff;
+    width: 510px;
+    border: 0px solid #fff;
     margin:-100px auto;
-    padding:0px 0px 20px 20px;
+    padding:0px 0px 20px 0px;
     box-shadow: 0px 0px 7px #FFE;
     position: relative;
 }
@@ -165,7 +165,7 @@ position: absolute;
     float:left;
     display: block;
     width:350px;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Overlock SC', cursive;
 }
 h3.right {
     float:right;
@@ -212,7 +212,7 @@ h3.right {
 .maillink {
     color: white;
     font-size: 34px;
-    font-family: 'Junge', serif;
+    font-family: 'Overlock SC', cursive;
     margin-top: 60px;
 }
 /*
