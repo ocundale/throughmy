@@ -27,22 +27,23 @@ body {
     
     /*background:url('../img/greenbg_tile.gif');*/
 }
-
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
   min-width: 1024px;
-    
+  display: none;    
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
-    
+    z-index:-1;
   /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
 }
-
+#galleryls canvas {
+    position: absolute;
+}
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
@@ -124,9 +125,9 @@ textarea {
    ========================================================================== */
 
 
-.slidedownpage {
-    width: 1000px;
-    height:700px;
+#container {
+    width: 800px;
+height: 580px;
     margin:auto;
     background-color: rgba(000,000,000,0.9);
     position: relative;
@@ -136,13 +137,46 @@ textarea {
     display:none;
     color: #fff;
     font-size: 12px;
-    font-family: Merienda;
+    font-family: 'Merienda', sans-serif;
     box-shadow: 0px 0px 7px #FFE;
+}
+.galleryls {
+    margin-top: 20px;
+position: absolute;
 }
 .slidedownpage h1 {
     margin-top:300px;
     width:200px;
     margin-left:350px;
+}
+.nav {
+    background-color: rgba(000,000,000,0.3);
+    color: white;
+    height: 40px;
+    display: block;
+    width: 800px;
+    border: 1px solid #fff;
+    margin:-100px auto;
+    padding:0px 0px 20px 20px;
+    box-shadow: 0px 0px 7px #FFE;
+    position: relative;
+}
+.nav h3 {
+    float:left;
+    display: block;
+    width:350px;
+    font-family: 'Merienda', sans-serif;
+}
+h3.right {
+    float:right;
+    width:100px;
+}
+.nav h3 a {
+    text-decoration: none;
+}
+.nav h3 a:hover {
+    text-shadow:0px 0px 3px #fff;
+
 }
 /* ==========================================================================
    Helper classes
