@@ -23,6 +23,7 @@ a {
 body {
     font-size: 1em;
     line-height: 1.4;
+    background:black;
 
     
     /*background:url('../img/greenbg_tile.gif');*/
@@ -132,11 +133,7 @@ textarea {
     position: relative;
     top: -700px;
     padding: 10px 30px;
-    border-radius: 2px;
-    display:none;
-    color: #fff;
-    font-size: 12px;
-    font-family: 'Merienda', sans-serif;
+    vertical-align: middle;
 
 }
 .galleryls {
@@ -153,7 +150,7 @@ textarea {
     display: block;
     width: 800px;
     margin:-100px auto;
-    padding:0px 0px 20px 20px;
+    padding:0px 0px 38px 20px;
     position: relative;
     /*color: white;
     box-shadow: 0px 0px 7px #FFE;
@@ -164,7 +161,8 @@ textarea {
     float:left;
     display: block;
     width:350px;
-    font-family: 'Merienda', sans-serif;
+    font-family: 'Give You Glory', cursive;
+    font-size: 24px;
 }
 h3.right {
     float:right;
