@@ -127,9 +127,8 @@ textarea {
 
 #container {
     width: 800px;
-height: 580px;
+    height: 580px;
     margin:auto;
-    background-color: rgba(000,000,000,0.9);
     position: relative;
     top: -700px;
     padding: 10px 30px;
@@ -138,11 +137,11 @@ height: 580px;
     color: #fff;
     font-size: 12px;
     font-family: 'Merienda', sans-serif;
-    box-shadow: 0px 0px 7px #FFE;
+
 }
 .galleryls {
     margin-top: 20px;
-position: absolute;
+    position: absolute;
 }
 .slidedownpage h1 {
     margin-top:300px;
@@ -150,16 +149,16 @@ position: absolute;
     margin-left:350px;
 }
 .nav {
-    background-color: rgba(000,000,000,0.3);
-    color: white;
     height: 40px;
     display: block;
     width: 800px;
-    border: 1px solid #fff;
     margin:-100px auto;
     padding:0px 0px 20px 20px;
-    box-shadow: 0px 0px 7px #FFE;
     position: relative;
+    /*color: white;
+    box-shadow: 0px 0px 7px #FFE;
+    border: 1px solid #fff;
+    background-color: rgba(000,000,000,0.3);*/
 }
 .nav h3 {
     float:left;
@@ -177,6 +176,12 @@ h3.right {
 .nav h3 a:hover {
     text-shadow:0px 0px 3px #fff;
 
+}
+.flip_gallery {
+    height: 533px;
+    border:3px solid black;
+    margin-top: -3px;
+width: 800px;
 }
 /* ==========================================================================
    Helper classes

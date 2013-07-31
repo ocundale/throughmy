@@ -3,7 +3,7 @@ $(function() {
 
 	function fadeContent() {
 	    $('#container').fadeIn(600).css({'top': '106px'}, 500);
-	    $('.nav').animate({ marginTop: '20px'}, 500).css({backgroundColor: 'rgba(000,000,000,0.9)'});
+	    $('.nav').animate({ marginTop: '20px'}, 500); //.css({backgroundColor: 'rgba(000,000,000,0.9)'});
 	}
 	//Listeners
 	$('img.bg').fadeIn(2000);
