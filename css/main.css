@@ -28,6 +28,9 @@ body {
     
     /*background:url('../img/greenbg_tile.gif');*/
 }
+.galimg {
+    display:none;
+}
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
