@@ -11,17 +11,12 @@ $(window).load(function(){
 	$('img.bg').fadeIn(2000);
 	setTimeout(fadeContent, 1500);
 	setTimeout(function(){
-		$('.bg').attr('src', 'img/bg5.jpg');
+		$('.bg').attr('src', 'img/bg11.jpg');
 	}, 11500);
 	setTimeout(function(){
-		$('.bg').attr('src', 'img/bg1c.jpg');
+		$('.bg').attr('src', 'img/bg_new.jpg');
 	}, 41500);
-	setTimeout(function(){
-		$('.bg').attr('src', 'img/bg7.jpg');
-	}, 21500);
-	setTimeout(function(){
-		$('.bg').attr('src', 'img/bg8.jpg');
-	}, 31500);
+
 	
 	$("#galleryls").jFlip(800,533,{background:"black",cornersTop:false}).bind("flip.jflip",function(event,index,total){
   		$("#l1").html("Image "+(index+1)+" of "+total);
