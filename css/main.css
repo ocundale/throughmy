@@ -18,7 +18,7 @@ textarea {
     color: #222;
 }
 a {
-    color:#158F28;
+    color:#FFF;
 }
 body {
     font-size: 1em;
@@ -28,26 +28,6 @@ body {
     
     /*background:url('../img/greenbg_tile.gif');*/
 }
-.galimg {
-    display:none;
-}
-img.bg {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-  display: none;    
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-    z-index:-1;
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-#galleryls canvas {
-    position: absolute;
-}
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
@@ -55,9 +35,6 @@ img.bg {
   }
 }
 
-h3.invitationtext a {
-    color:black!important;
-}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
@@ -127,63 +104,77 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#containermain {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-430px;
-    margin-top:-265px;
-}
-
 #container {
-    
+    position: relative;
+    left: 50%;
+    display: block;
+    float: left;
+    margin-left: -400px;
+}
 
+#prints_page {
+    display: none;
 }
-.galleryls {
-    margin-top: 20px;
-    position: absolute;
-}
+
 .slidedownpage h1 {
     margin-top:300px;
     width:200px;
     margin-left:350px;
 }
+#contact_page {
+    display:none;
+    
+    width: 530px;
+    height: 800px;
+    position: absolute;
+
+    left: 50%;
+    margin-left: -270px;
+    margin-top:100px;
+}
+#prints_page {
+    display:none;
+    
+    width: 530px;
+    height: 800px;
+    position: absolute;
+
+    left: 50%;
+    margin-left: -270px;
+    margin-top:100px;
+}
 .nav {
     height: 40px;
-display: block;
-width: 800px;
-left: 50%;
-padding: 0px 0px 38px 20px;
-position: absolute;
-margin-left: -420px;
-    /*color: white;
+    display: block;
+    width: 600px;
+    left: 50%;
+    padding: 0px 0px 38px 20px;
+    position: relative;
+margin-left: -210px;    /*color: white;
     box-shadow: 0px 0px 7px #FFE;
     border: 1px solid #fff;
     background-color: rgba(000,000,000,0.3);*/
 }
 .nav h3 {
-    float:left;
+    float: left;
     display: block;
-    width:350px;
+    width: 200px;
     font-family: 'Give You Glory', cursive;
-    font-size: 24px;
+    font-size: 20px;
+    
 }
-h3.right {
+/*h3.right {
     float:right;
     width:100px;
-}
+}*/
 .nav h3 a {
     text-decoration: none;
 }
 .nav h3 a:hover {
     text-shadow: 0px 0px 1px blueviolet;
-
 }
-.flip_gallery {
-    height: 533px;
-    border:3px solid black;
-    margin-top: -3px;
-width: 800px;
+.galleria-thumbnails {
+    margin:auto;
 }
 /* ==========================================================================
    Helper classes
@@ -260,21 +251,8 @@ width: 800px;
     visibility: hidden;
 }
 
-#bgfader {
-    background: white;
-    opacity: .85;
-    -moz-opacity: .85;
-    -filter: alpha(opacity=85);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-    display: none;
-}
 
-
+#galleria{ width: 900px; height: 500px; background: #000 }
 /*
  * Clearfix: contain floats
  *

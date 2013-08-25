@@ -23,48 +23,48 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <!--<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
   <script src="js/jflip.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.1.min.js"><\/script>')</script>
-
+  <script src="galleria/galleria-1.2.9.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
 </head>
 <body>
-<img class="bg" src="img/bg_new.jpg" />
 <div class="nav">
-    <h3><a href="#">Home</a></h3>
-    <h3><a href="#">Prints</a></h3>
-    <h3 class="right"><a href="#">Contact</a></h3>
-  </div>
-<div id="containermain">
-  
+    <h3><a class="go_link" href="/container">Home</a></h3>
+    <h3><a class="go_link" href="/prints_page">Prints</a></h3>
+    <h3 class="right"><a class="go_link" href="/contact_page">Contact</a></h3>
+</div>
 
     <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
+    <div id="container" class="slidedownpage">
+       <div id="galleria">
+            <img class="galimg" src="img/lake.jpg">
+            <img class="galimg" src="img/reflections.jpg" alt="My style" />
+            <img class="galimg" src="img/reflections2.jpg" alt="My style" />
+            <img class="galimg" src="img/abandonedhouse.jpg" alt="My style" />
+            <img class="galimg" src="img/lakelarge.jpg" alt="My style" />
+        </div>
+        <script>
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('#galleria');
+        </script>
+    </div>
+  </div>
 
-  <div id="container" class="slidedownpage">
-    <ul id="galleryls">
-      <li>
-        <img class="galimg" src="img/lake.jpg">
-      </li>
-      <li>
-        <img class="galimg" src="img/reflections.jpg" alt="My style" />
-      </li>
-      <li>
-        <img class="galimg" src="img/reflections2.jpg" alt="My style" />
-      </li>
-      <li>
-        <img class="galimg" src="img/abandonedhouse.jpg" alt="My style" />
-    </li>
-      <li>
-        <img class="galimg" src="img/lakelarge.jpg" alt="My style" />
-    </li>
-  </ul>
+  <div id="contact_page">
+    <h3>Contact:</h3>
+  </div>
+
+  <div id="prints_page">
+    <h3>Prints</h3>
   </div>
 
 </div>
-  </body>
+
+</body>
 </html>
