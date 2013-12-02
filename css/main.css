@@ -135,11 +135,9 @@ textarea {
 .nav {
     height: 40px;
     display: block;
-    width: 600px;
-    left: 50%;
+    width: 100%;
     padding: 0px 0px 38px 20px;
-    position: relative;
-    margin-left: -210px;    /*color: white;
+    position: relative;/*
     box-shadow: 0px 0px 7px #FFE;
     border: 1px solid #fff;
     background-color: rgba(000,000,000,0.3);*/
@@ -169,7 +167,15 @@ p.copyright {
     width: 200px;
     font-family: 'Give You Glory', cursive;
     font-size: 20px;
-    
+    margin-left:-100px;
+    left:50%;    
+	position:absolute;
+}
+.nav h3:first-child {
+    left:20%;
+}
+.nav h3:last-child {
+    right:15%;
 }
 /*h3.right {
     float:right;

@@ -29,18 +29,38 @@ $(function() {
 		}
 	}
 
+	function centre_content() {
+		var win_height = $(window).height(),
+		    content_height = $('#content').height();
+		$('#content').css('margin','0 auto');
+
+		if ( win_height > content_height ) {
+			$('#content').css({
+				top : win_height/2 - content_height/2
+			});
+		}
+		else {
+			$('#content').css({
+				top : '10px',
+			});
+		}
+	}
+
+
 	//Listeners
 	$(document).ready(function() {
-	$('.go_link').on('click', switchPage);
-	$('#contact_page').click(function(e){
-    $('.copyright').fadeOut(1000,function(){
-	      alert("fadeOut() method is finished!");
-	    });
-	  });
-	console.log('go ahead.....inspect me');
-	setTimeout(function(){console.log('son of a....');}, 6000)
-
-});
+		$('.go_link').on('click', switchPage);
+		$('#contact_page').click(function(e){
+    			$('.copyright').fadeOut(1000,function(){
+	      			alert("fadeOut() method is finished!");
+	    		});
+	  	});
+		console.log('go ahead.....inspect me');
+		setTimeout(function(){
+			console.log('son of a....');
+		}, 6000);
+		centre_content();
+	});
 	
 });  
 
