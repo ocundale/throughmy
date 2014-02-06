@@ -112,6 +112,25 @@ textarea {
     margin-left: -450px;
 }
 
+.outer-centre {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle-centre {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner-centre {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+}
+
+
 #prints_page {
     display: none;
 }
@@ -153,13 +172,10 @@ textarea {
 p.copyright {
     color: #BBB;
     font-size: 10px;
-    position: relative;
-    float: left;
+    position: absolute;
     left: 50%;
-    margin-top: 520px;
-    clear: both;
-    margin: auto;
-    padding: 12px 0px;
+    margin-left: -100px;
+	bottom:5px;
 }
 .nav h3 {
     float: left;
