@@ -10,13 +10,13 @@ $(function() {
 			switch (page) {
 				case "container":
 					$('#contact_page, #prints_page').fadeOut(1000, function() {
-				    	$('#container').fadeIn(100);
+							$('#container').fadeIn();
 				    });
 				    break;
 				
 				case "prints_page":
 					$('#contact_page, #container').fadeOut(1000, function() {
-				    	$('#prints_page').fadeIn(100);
+				    	$('#prints_page').fadeIn();
 				    });
 				    break;
 
